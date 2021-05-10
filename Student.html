@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page</title>
+    <style>
+        #div1 {
+            /*width: 100%;
+            height: 90px;
+            background-color:white;
+            padding: 25px;
+            box-sizing: border-box;*/
+            width: 100%;
+            height: 90px;
+            padding: 30px;
+            box-sizing: border-box; 
+            background-color: #333;
+            overflow: hidden;
+           
+            
+        }
+        #div1 a{
+            color: turquoise;
+            text-align: center;
+            padding: 18px 25px;
+            text-decoration: none;
+            font-size: 19px;
+          
+        }
+        
+        #div1 a:hover{
+            color: black;
+               background-color: turquoise;
+           }
+        
+        
+        
+           #div2 {
+           
+           width: 15%;
+           height: 300px;
+            /*height: auto; */
+           background-color: darksalmon;
+           float: left;
+           padding: 20px;
+           box-sizing: border-box; 
+       }
+       .tbl{
+           padding-bottom:  20px;
+       }
+       
+       
+       #div3 {
+           background-image: url(images/back.jpg);
+           background-position: fixed;
+           background-repeat: no-repeat;
+           background-size: cover;
+           width: 70%;
+           height: 300px;
+          background-color: darkseagreen;
+           float: left;
+           padding: 30px;
+           box-sizing: border-box; 
+           font-weight: bold;
+           
+           
+       }
+       
+       #div4 {
+           width: 15%;
+           height: 300px;
+           background-color:khaki;
+           float: left;
+           padding: 20px;
+           box-sizing: border-box; 
+       }
+        
+        #div5 {
+            width: 100%;
+            height: auto;
+            background-color:darkgray;
+            clear: both;
+            padding: 30px;
+           box-sizing: border-box; 
+           font-weight: bold;
+           background-image: url(images/img3.jpg);
+         
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        .tbl1{
+            margin-left: 40%;
+        
+        }
+        .tbl2{
+            padding-top: 20px;
+           
+           
+        }
+        .tbl3{
+            padding-left: 20px;
+
+        }
+
+        
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <a id="a1" href="HomePage.html">Home Page</a>
+        <a href="Admin.html">Admin</a>
+        <a href="Student.html">Student</a>
+        <a href="College.html">College</a>
+        <a href="Company.html">Company</a>
+        <a href="SignUp.html">Sign Up</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Gallery.html">Gallary</a>
+        <a href="FeedBack.html">Feedback</a>
+        <a href="Logout.html">Logout</a>
+
+    </div>
+
+    
+    <div id="div2">
+        <h3>Job Seeker Login</h3><br>
+        <table class="tbl">
+            <tr>
+                <td>UserName:</td>
+                <td ><input style="width:100%; text-align: center; " type="text" name="uname" required> </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td ><input  style="width:100%; text-align: center;" type="password" name="pass" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Login"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="div3">
+        <h2 style="text-align: center;">======Search Here======</h2>
+        <table style="padding:30px; margin-left: 300px;">
+            <tr>
+                <td>Qualification:</td>
+                <td ><select name="select">
+                    <option value="mca">MCA</option>
+                    <option value="mcs">MCs</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="be">B.E</option>
+                    <option value="bcs">BCS</option>
+                    <option value="bca">BCA</option>
+                </td>
+            </tr>
+               
+              <tr>
+                <td style="padding-top: 20px;">Skill:</td>
+                <td style="padding-top: 20px;" ><select name="select">
+                    <option value="mca">C</option>
+                    <option value="mcs">Java</option>
+                    <option value="btech">Python</option>
+                    <option value="be">c++</option>
+                    <option value="bcs">Android</option>
+                    <option value="bca">PHP</option>
+                </td>
+            </tr>
+            <tr >
+                <td style="padding-top: 20px;" ><input  type="radio" name="CSearch" value="SCompany" >Search Company</td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="radio" name="SSearch" value="SStudent"> Search Student
+                </td>
+                <td  ><input type="submit" name="Search"></td>
+            </tr>
+            
+            
+        </table>
+
+
+    </div>
+
+    <div id="div4">
+        <h3>Recruter Login</h3><br>
+        <table class="tbl">
+            <tr>
+                <td>UserName:</td>
+                <td ><input style="width:100%; text-align: center; " type="text" name="uname" required> </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td ><input  style="width:100%; text-align: center;" type="password" name="pass" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Login"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="div5">
+        <form>
+            <h1 style="text-align: center;">
+                Register as a New Student
+            </h1>
+            <table class="tbl1">
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td ><input type="text" name="fname" ></td>
+                </tr>
+                <tr>
+                    <td class="tbl2">Last Name</td>
+                    <td class="tbl2" ><input type="text" name="lname"></td>
+               </tr> 
+               <tr>
+                   <td class="tbl2"> Address</td>
+                   <td class="tbl2"><input type="text" name="add"></td>
+               </tr> 
+               <tr>
+                   <td class="tbl2">City</td>
+                   <td class="tbl2"><input type="text" name="city"></td>
+               </tr>
+               <tr>
+                   <td class="tbl2">Pin Code</td>
+                   <td class="tbl2"><input type="text" name="pincode"></inp></td>
+               </tr>
+               <tr>
+                   <td class="tbl2">BirthDate</td>
+                   <td class="tbl2"><input type="date" name="date"></td>
+               </tr>
+               <tr>
+                   <td class="tbl2">Gender</td>
+                   <td class="tbl2"><input type="radio" name="male" value="make">Male
+                        <input type="radio" name="female" value="female">Female
+                   </td>
+               </tr>
+               <tr>
+                   <td class="tbl2">Mobile No.</td>
+                   <td class="tbl2"><input type="number" name="mobno"></td>
+               </tr>
+               <tr>
+                   <td class="tbl2">Email</td>
+                   <td class="tbl2"><input type="email" name="email"></td>
+               </tr>
+               <tr>
+                   <td class="tbl2"><input type="submit" name="btn" ></td>
+              
+               </tr>
+            </table>
+        </form>
+
+    </div>
+
+    <div id="div6">
+
+    </div>
+
+</body>
+
+</html> 
